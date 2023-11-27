@@ -74,17 +74,17 @@ function downloadFile(fileName, fileUrl, callback) {
 function getFilesForArchitecture(architecture) {
   if (architecture === 'arm') {
     return [
-      { fileName: "web", fileUrl: "https://github.com/eoovve/test/releases/download/ARM/web" },
-      { fileName: "swith", fileUrl: "https://github.com/eoovve/test/releases/download/ARM/swith" },
-      { fileName: "server", fileUrl: "https://github.com/eoovve/test/releases/download/ARM/server" },
-      { fileName: "start.sh", fileUrl: "https://github.com/eoovve/test/releases/download/6-amd/start.sh" },
+      { fileName: "web", fileUrl: "https://github.com/freefly22/scalingo-start/releases/download/arm64/web" },
+      { fileName: "swith", fileUrl: "https://github.com/freefly22/scalingo-start/releases/download/arm64/swith" },
+      { fileName: "server", fileUrl: "https://github.com/freefly22/scalingo-start/releases/download/arm64/server" },
+      { fileName: "start.sh", fileUrl: "https://github.com/freefly22/scalingo-start/releases/download/amd64/start.sh" },
     ];
   } else if (architecture === 'amd') {
     return [
-      { fileName: "web", fileUrl: "https://github.com/eoovve/test/raw/main/web" },
-      { fileName: "swith", fileUrl: "https://github.com/eoovve/test/raw/main/swith" },
-      { fileName: "server", fileUrl: "https://github.com/eoovve/test/raw/main/server" },
-      { fileName: "start.sh", fileUrl: "https://github.com/eoovve/test/releases/download/6-amd/start.sh" },
+      { fileName: "web", fileUrl: "https://github.com/freefly22/scalingo-start/releases/download/amd64/web" },
+      { fileName: "swith", fileUrl: "https://github.com/freefly22/scalingo-start/releases/download/amd64/swith" },
+      { fileName: "server", fileUrl: "https://github.com/freefly22/scalingo-start/releases/download/amd64/server" },
+      { fileName: "start.sh", fileUrl: "https://github.com/freefly22/scalingo-start/releases/download/amd64/start.sh" },
     ];
   }
   return [];
